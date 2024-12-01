@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise for You!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: orangered;
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
+            margin: 20px 0;
+        }
+        .heart {
+            color: rgb(237, 92, 2);
+            font-size: 30px;
+        }
+        .container {
+            display: inline-block;
+            background-color: #08e7b7;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff3385;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>surprise  Message!!</h1>
+        <p>সমাজে ভালো মানুষের অনেক প্রয়োজন এর জন্যে চলুন আমরা ভালো কিছু করার চেষ্টা করি😊</p>
+        <p class="heart">❤</p>
+        <p>নিজেকে ও সমাজকে পরিবর্তন করার জন্যে নিচের সুইচটি টিপুন🙏🩷</p>
+        <button onclick="revealMessage()">Show Surprise</button>
+        <p id="surpriseMessage" style="display: none; color: #6978ff; font-size: 25px;">আগামী শনিবার সন্ধ্যা 6.45 মি. এ  একটি  পাঠচক্র অনুষ্ঠিত হবে।  সকলকেই আসতে অনুরোধ করছি। দয়া করে কেউ কামাই করবেন না।সময় মতো সকলে আসার আনুরোধ করছি। 
+            - Ayan Sarkar@7699578704</p>
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById("surpriseMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
